@@ -17,7 +17,8 @@ int main(int argc, char** argv){
     ROS_INFO("Waiting for the move_base action server to come up");
   }
 
-  float positions[] = {-1.0, 1.0};
+  float positions_x[] = {3.0, -1.0};
+  float positions_y[] = {-1.0, 2.0};
   float oriens[] = {1.0, 1.0};
   int success_count = 0;
   for(int i=0; i < 2; ++i)
@@ -29,7 +30,8 @@ int main(int argc, char** argv){
     goal.target_pose.header.stamp = ros::Time::now();
 
     // Define a position and orientation for the robot to reach
-    goal.target_pose.pose.position.x = positions[i];
+    goal.target_pose.pose.position.x = positions_x[i];
+    goal.target_pose.pose.position.y = positions_y[i];
     goal.target_pose.pose.orientation.w = oriens[i];
 
     // Send the goal position and orientation for the robot to reach
