@@ -1,6 +1,8 @@
 # catkin_service_robot
 Home delivery service robot that can autonomously map an environment with gmapping and navigate to pick up and dropped virtual objects using navigation stack, code in `src/pick_objects/src/pick_objects.cpp`. Deploy the virtual markers in `add_markers/src/add_markers.cpp`.
 
+![screenshot](./images/Screenshot.png)
+
 ## Configuration requires
 - A 2D Laser, providing sensor_msgs/LaserScan messages
 - Odometry sensors, providing nav_msgs/Odometry messages
