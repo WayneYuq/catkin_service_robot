@@ -9,7 +9,7 @@ int main(int argc, char** argv){
   // Initialize the simple_navigation_goals node
   ros::init(argc, argv, "simple_navigation_goals");
 
-  //tell the action client that we want to spin a thread by default
+  // tell the action client that we want to spin a thread by default
   MoveBaseClient ac("move_base", true);
 
   // Wait 5 sec for move_base action server to come up

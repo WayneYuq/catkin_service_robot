@@ -20,7 +20,7 @@ public:
     color_a_[1] = 0;
     color_a_[2] = 1;
     step_ = 0;
-    shape_ = visualization_msgs::Marker::CUBE;
+    shape_ = visualization_msgs::Marker::ARROW;
   };
 
   void odom_callback(const nav_msgs::Odometry msg);
