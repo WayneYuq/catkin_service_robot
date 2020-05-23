@@ -15,7 +15,7 @@ Home delivery service robot that can autonomously map an environment with gmappi
 
 ## Usage
 0. Upgrade the system `sudo apt-get update && apt-get upgrade`
-1. Change working directory to top level and pull four repositories:
+1. `cd /path/to/catkin_service_robot`:
 2. `git clone https://github.com/ros-perception/slam_gmapping.git src/slam_gmapping`
 3. `git clone https://github.com/turtlebot/turtlebot_interactions.git src/turtlebot_interactions`
 4. `git clone https://github.com/turtlebot/turtlebot_simulator.git src/turtlebot_simulator`
