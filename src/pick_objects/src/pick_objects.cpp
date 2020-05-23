@@ -5,7 +5,8 @@
 // Define a client for to send goal requests to the move_base server through a SimpleActionClient
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
 
-int main(int argc, char** argv){
+int main(int argc, char** argv)
+{
   // Initialize the simple_navigation_goals node
   ros::init(argc, argv, "simple_navigation_goals");
 
@@ -21,6 +22,7 @@ int main(int argc, char** argv){
   float positions_y[] = {-1.0, 2.0};
   float oriens[] = {1.0, 1.0};
   int success_count = 0;
+
   for(int i=0; i < 2; ++i)
   {
     move_base_msgs::MoveBaseGoal goal;
@@ -47,8 +49,9 @@ int main(int argc, char** argv){
       success_count++;
       if (success_count == 1) ros::Duration(5.0).sleep();
     }
-    else
+    else {
       ROS_INFO("The base failed to move forward 1 meter for some reason");
+    }
   }
 
   if (success_count == 2)
