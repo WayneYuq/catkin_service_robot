@@ -8,6 +8,7 @@ Home delivery service robot that can autonomously map an environment with gmappi
 - Odometry sensors, providing nav_msgs/Odometry messages
 
 ## Requirment
+- Ubuntu or Lubuntu
 - ROS kinetic;
 - Gazebo 7.16.0
 - Rviz 
