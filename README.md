@@ -23,4 +23,4 @@ Home delivery service robot that can autonomously map an environment with gmappi
 5. `git clone https://github.com/turtlebot/turtlebot.git src/turtlebot`
 6. Compile project with `catkin_make`
 7. `source devel/setup.bash`
-8. Run the .sh file `sh src/scripts/home_service.sh`, it will launch separate instances of terminal to run each launch file, so you can track output of different nodes.
+8. Run the `.sh` file `sh src/scripts/home_service.sh`, it will launch separate instances of terminal to run each launch file, so you can track output of different nodes.
