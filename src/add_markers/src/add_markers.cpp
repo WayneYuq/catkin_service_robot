@@ -75,9 +75,9 @@ void Markerhandle::odom_callback(const nav_msgs::Odometry msg)
     marker.pose.orientation.w = 1.0;
 
     // Set the scale of the marker -- 1x1x1 here means 1m on a side
-    marker.scale.x = 0.3;
-    marker.scale.y = 0.3;
-    marker.scale.z = 0.3;
+    marker.scale.x = 0.2;
+    marker.scale.y = 0.2;
+    marker.scale.z = 0.2;
 
     // Set the color -- be sure to set alpha to something non-zero!
     marker.color.r = 0.0f;
@@ -99,8 +99,8 @@ void Markerhandle::odom_callback(const nav_msgs::Odometry msg)
     }
     marker_pub_.publish(marker);
     if ( step_ == 0
-      && fabs(msg.pose.pose.position.x - x_list_[0]) < 0.2
-      && fabs(msg.pose.pose.position.y - y_list_[0]) < 0.2)
+      && fabs(msg.pose.pose.position.x - x_list_[0]) < 0.3
+      && fabs(msg.pose.pose.position.y - y_list_[0]) < 0.3)
     {
       ROS_INFO("Marker has been picked up!");
       step_++;
